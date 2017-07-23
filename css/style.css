@@ -1,3 +1,84 @@
 body {
-    background-color: red;
+    background-color: grey;
+}
+
+
+/*selektor znacznika*/
+
+p {
+    color: orange;
+}
+
+
+/*selektor id*/
+
+#paragraf {
+    color: violet;
+    text-align: justify;
+}
+
+
+/*selektor klasy*/
+
+.klasa-paragrafu {
+    color: green;
+    text-align: justify
+}
+
+
+/*łączenie selektorów*/
+
+a,
+span,
+div {
+    color: blue
+}
+
+
+/*<!--selektor bezposredniego elementu potomnego-->*/
+
+li>a {
+    color: aqua;
+}
+
+
+/*selektor elemntu potomnego*/
+
+div a {
+    color: black
+}
+
+
+/*selektor bliskiego rodzeństwa*/
+
+h2+h3 {
+    color: brown;
+}
+
+
+/*selektor rodzeństwa*/
+
+h4~p {
+    color: yellow;
+    background-color: black;
+}
+
+
+/*selektor wykluczający*/
+
+#listamoja>li:not(.last) {
+    color: pink;
+}
+
+
+/*selekto kolejnego elemetu potomnego*/
+
+ul#lista-karoliny>ol {
+    background-color: aquamarine;
+    color: darkblue;
+    border-bottom: 2px solid black;
+}
+
+ul#lista-karoliny>ol:nth-child(3) {
+    color: red;
 }
